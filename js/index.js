@@ -77,3 +77,23 @@ p[8].textContent = siteContent["footer"]["copyright"];
 
 const middleImg = document.querySelector('#middle-img');
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+a.forEach( element => {
+  element.style.color = "green";
+});
+
+const partners = document.createElement('a');
+partners.textContent = "Partners";
+partners.style.color = "green";
+
+const careers = document.createElement('a');
+careers.textContent = "Careers";
+careers.style.color = "green";
+
+const nav = document.querySelector('nav');
+nav.prepend(partners);
+nav.appendChild(careers);
+
+
+// partners
+// careers
